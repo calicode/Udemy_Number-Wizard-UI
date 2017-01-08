@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{7833BEAA-FE5A-3DED-A47D-F609931BE7E3}") = "Udemy_Number-Wizard-UI", "Assembly-CSharp.csproj", "{49B38A25-E321-5FB3-9B8F-48DC87C7A346}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49B38A25-E321-5FB3-9B8F-48DC87C7A346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B38A25-E321-5FB3-9B8F-48DC87C7A346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B38A25-E321-5FB3-9B8F-48DC87C7A346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B38A25-E321-5FB3-9B8F-48DC87C7A346}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

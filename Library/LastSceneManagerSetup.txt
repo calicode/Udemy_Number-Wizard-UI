@@ -1,1 +1,13 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Start.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Game.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Lose.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Win.unity
+  isLoaded: 1
+  isActive: 1
