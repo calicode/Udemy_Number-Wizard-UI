@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class NumberWizard : MonoBehaviour {
+public class NumberWizard : MonoBehaviour
+{
 	public Text WizardSays;
 
-	int guesscount = 0;	
+	int guesscount = 0;
 	int max = 10000;
 	int min = 1;
-	int guess = 5000;
+	int guess;
+
 	int max_guesses = 5;
 	// Use this for initialization
 
@@ -18,26 +20,28 @@ public class NumberWizard : MonoBehaviour {
 
 
 
-	 void GuessAgain (){
+	void GuessAgain ()
+	{
 
 		if (guesscount > max_guesses) {
-		//	LevelManager.LoadLevel("Win");
-		//figure out why the above code doesn't work
-		SceneManager.LoadScene ("Win");
-			}
-
-
-		else {
+			//	LevelManager.LoadLevel("Win");
+			//figure out why the above code doesn't work
+			SceneManager.LoadScene ("Win");
+		} else {
+			
 			guess = (max + min) / 2;
-			WizardSays.text = "Is your numberzzz: "+guess+"?";
-		   }
-		
-
+			WizardSays.text = "Is your numberzzz: " + guess + "?";
 		}
+		
+
+	}
 
 
 		
-	public void Start(){
+	public void Start ()
+	{
+		guess = Random.Range (min, max);
+		print ("start ran and guess is " + guess); 
 		GuessAgain ();
 
 	}
@@ -49,32 +53,36 @@ public class NumberWizard : MonoBehaviour {
 
 
 
-#region buttonhandlers
-public void GuessHigher(){
-		print("Up pressed");
+	#region buttonhandlers
+
+	public void GuessHigher ()
+	{
+		print ("Up pressed");
 		min = guess;
-		GuessAgain();
+		GuessAgain ();
 		guesscount++;
 
 
 
-}
+	}
 
-public void GuessLower(){
+	public void GuessLower ()
+	{
 
-		print("Down pressed");
-			max = guess;
-			GuessAgain();
-			guesscount++;
-}
+		print ("Down pressed");
+		max = guess;
+		GuessAgain ();
+		guesscount++;
+	}
 
 
-public void WizardWon(){
+	public void WizardWon ()
+	{
 // game goes to lose screen. 
 
-}
+	}
 
 
-#endregion
+	#endregion
 
 }
